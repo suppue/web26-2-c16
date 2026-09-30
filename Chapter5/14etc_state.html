@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ㅏㅐ">
+<head>
+    <meta charset="UTF-8">
+    <title>5반응/상태/구조 선택자</title>
+<style>
+    h2:hover{color: red;} /*마우스 위치 인식 */
+    h2:active{color: blue;} /*마우스 클릭 인식 */
+/*input태그가 사용 불가능할 때 background-color속성에 white키워드를 적용함.*/
+input:enabled{background-color: white;}
+/*input태그가 포커스를 맞출때 background-color속성에 gray 키워드를 적용함.*/
+input:disabled{background-color: gray;}
+
+/*input태그가 사용 가능할 때 background-color속성에 orange 키워드를 적용함.*/
+    input:focus{background-color: orange;}
+    </style>
+    </head>
+<body>
+    <h2>5.1 반응 선택자</h2>
+    <h2>5.2 상태 선택자</h2>
+    <hr>    
+    <h3>사용 가능</h3>
+    <input>
+    <h3>사용 불가능</h3>
+    <input disabled="disabled">
+</body>
+</html>
