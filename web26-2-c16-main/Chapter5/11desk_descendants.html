@@ -1,0 +1,32 @@
+<html lang="ko"><head>
+    <meta charset="UTF-8">
+
+    <title>CSS3 Selector Basic</title>
+    <style>
+        #header h1{color: red}
+        #section h1{color: orange;}
+
+        #header h1, h2{color:red}
+        /* #header h1, #header h2{color:red} */
+    </style>
+</head>
+
+<body>
+    <h3>1. 후손선택자: 특정한 태그의 후손을 선택 (선택자A 선택자B)</h3>
+    <h3>2. 자손선택자: 특정한 태그의 자손을 선택 (선택자A>선택자B)</h3>
+    <div id="header">
+        <h1 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+        <h2>*header안의 h2 - CSS3 Selector basic</h2>
+        <div id="nav">
+            <h1>Navigation</h1><!--  해더만 적용 해더 자식은 적용 X -->
+        </div>
+    </div>
+    <div id="section">
+        <h1 class="title">Lorem ipsum</h1>
+        <h2>*header안에 h2 - CSS3 Selector basic</h2>
+        <p>dolor sit, amet consectetur adipisicing elit. Voluptatem vero voluptate eos consequatur illo aut dolorem omnis recusandae! Rerum maiores maxime minus molestias harum corrupti tenetur distinctio hic dignissimos quidem.</p>
+    </div>
+
+
+
+</body></html>
